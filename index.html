@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impartial Estates Developments - Expert Property Development Management SA</title>
+    <meta name="description" content="Unlock your property's potential. Impartial Estates provides expert residential development management services across South Africa, with a strong focus on Gauteng. We secure land options and concurrent financing. Transparent, performance-aligned fees.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* --- CSS STYLES (Your existing styles are excellent and remain unchanged) --- */
+        :root {
+            /* Updated Colors based on Logo */
+            --logo-yellow: #DBA800; /* Main Yellow/Gold background of logo */
+            --logo-green: #2A6040; /* Deep Forest Green of house */
+            --logo-brown: #7A4F2C; /* Rich Brown of swirl/text */
+            --main-text-color: #4F321B; /* Darker version of logo brown for main text */
+            --light-background: #FDF2DE; /* Very light creamy yellow/off-white */
+            --white: #FFFFFF;
+            --button-hover-green: #44956C; /* Slightly brighter green for hover */
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--main-text-color);
+            background-color: var(--white);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--logo-green);
+            line-height: 1.2;
+            margin-bottom: 0.5em;
+        }
+
+        h1 { font-size: 2.8em; }
+        h2 { font-size: 2.2em; }
+        h3 { font-size: 1.6em; }
+
+        a {
+            color: var(--logo-brown);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            max-height: 60px; /* Adjust based on your logo's aspect ratio */
+            width: auto; /* Maintain aspect ratio */
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: var(--main-text-color);
+            padding: 5px 0;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--logo-yellow);
+            text-decoration: none;
+        }
+        
+        .nav-links .btn {
+            padding: 10px 20px;
+            font-size: 0.9em;
+            margin-left: 15px;
+        }
+        
+        .nav-links .btn:hover {
+            color: var(--white);
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--logo-green);
+            color: var(--white);
+            text-align: center;
+            padding: 100px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 600px;
+            background-image: url('https://images.unsplash.com/photo-1588371231714-4340445a4a6c?q=80&w=2070&auto=format&fit=crop'); /* A high-quality, relevant background image */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(42, 96, 64, 0.6); /* Using logo green for the overlay */
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            color: var(--white);
+            font-size: 3.5em;
+            margin-bottom: 0.3em;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 1.5em;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--logo-yellow);
+            color: var(--main-text-color);
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .btn:hover {
+            background-color: var(--logo-green);
+            color: var(--white);
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid var(--white);
+            color: var(--white);
+            margin-left: 20px;
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--white);
+            color: var(--logo-green);
+            text-decoration: none;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        section:nth-of-type(even) {
+            background-color: var(--light-background);
+        }
+
+        .section-title {
+            margin-bottom: 60px;
+            font-size: 2.5em;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--logo-yellow);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            text-align: left;
+        }
+
+        .service-item {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .service-item h3 {
+            color: var(--logo-brown);
+            margin-top: 0;
+        }
+        
+        /* Projects Section */
+        .project-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            overflow: hidden;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .project-card-content {
+            padding: 25px;
+        }
+
+        .project-card-content h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        
+        /* Call to Action Section */
+        .cta-section {
+            background-color: var(--logo-yellow);
+            color: var(--main-text-color);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            color: var(--logo-green);
+            font-size: 2.8em;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            color: rgba(0,0,0,0.8);
+        }
+
+        .cta-section .btn {
+            background-color: var(--logo-green);
+            color: var(--white);
+        }
+        .cta-section .btn:hover {
+            background-color: var(--logo-brown);
+            color: var(--white);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--logo-brown);
+            color: var(--white);
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .footer-links a {
+            color: var(--white);
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--logo-yellow);
+        }
+
+        .social-icons a {
+            color: var(--white);
+            font-size: 1.5em;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: var(--logo-yellow);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .nav-links {
+                margin-top: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+             .nav-links .btn {
+                margin-left: 0;
+            }
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            .hero p {
+                font-size: 1.1em;
+            }
+            .btn {
+                width: 100%;
+                margin-bottom: 15px;
+                box-sizing: border-box;
+            }
+            .btn-secondary {
+                margin-left: 0;
+            }
+            .section-title {
+                font-size: 2em;
+            }
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <a href="index.html"><img src="Impartial Estates Logo2.png" alt="Impartial Estates Developments Logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="our-approach.html">Our Approach</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="btn">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Unlock Your Property's Full Potential</h1>
+                <p>Expert Development Management for residential projects across South Africa. We de-risk opportunities by packaging land, design, and financing into a single, bankable strategy.</p>
+                <a href="services.html" class="btn">Explore Our Services</a>
+                <a href="contact.html" class="btn btn-secondary">Discuss Your Project</a>
+            </div>
+        </section>
+
+        <section id="intro-services">
+            <div class="container">
+                <h2 class="section-title">Our Core Capabilities</h2>
+                <p style="max-width: 800px; margin: 0 auto 60px;">We are not just consultants; we are strategic partners who manage every phase of the development lifecycle to ensure efficiency, quality, and optimal returns for landowners and investors.</p>
+
+                <div class="services-grid">
+                    <div class="service-item">
+                        <h3>Concept & Feasibility</h3>
+                        <p>We turn raw land into a viable vision through market analysis, financial modeling, and highest-and-best-use studies.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Structuring & Finance</h3>
+                        <p>We structure bankable deals and connect projects with the right capital partners, from private equity to DFIs.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Project Execution</h3>
+                        <p>We oversee the entire execution, managing professional teams, contractors, and municipal processes from groundbreaking to final handover.</p>
+                    </div>
+                </div>
+                <div style="margin-top: 40px;">
+                    <a href="our-approach.html" class="btn">Discover Our Method</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects-preview" class="light-background">
+            <div class="container">
+                <h2 class="section-title">Our Vision in Motion</h2>
+                <p style="max-width: 800px; margin: 0 auto 60px;">We actively identify and package promising residential development opportunities. Below are examples of projects that reflect our strategic focus.</p>
+
+                <div class="services-grid"> <div class="project-card">
+                        <img src="residential dev.png" alt="Johannesburg Infill Townhouses">
+                        <div class="project-card-content">
+                            <h3>Medium-Density Townhouses</h3>
+                            <p>Identifying and packaging infill sites in established suburbs for modern, secure townhouse developments aimed at the mid-market.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="luxury conceptual townhouse.png" alt="Large Scale Community Development">
+                        <div class="project-card-content">
+                            <h3>Large-Scale Communities</h3>
+                            <p>Our long-term vision focuses on originating master-planned communities that offer a mix of housing types and social amenities.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="student accom eastern cape.png" alt="Student Accommodation">
+                        <div class="project-card-content">
+                            <h3>Niche Opportunities</h3>
+                            <p>We also analyze high-yield opportunities like purpose-built student accommodation near growing tertiary institutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 40px;">
+                     <a href="projects.html" class="btn">View All Opportunities</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="cta-section">
+            <div class="container">
+                <h2>Ready to Build Value Together?</h2>
+                <p>Whether you're a landowner with development aspirations, an investor seeking managed opportunities, or a professional looking to collaborate, we invite you to start a conversation.</p>
+                <a href="contact.html" class="btn">Let's Connect</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container footer-content">
+             <div class="logo">
+                <a href="index.html"><img src="Impartial Estates Logo2.png" alt="Impartial Estates Developments Logo" style="max-height: 50px;"></a>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a> |
+                <a href="our-approach.html">Our Approach</a> |
+                <a href="services.html">Services</a> |
+                <a href="projects.html">Projects</a> |
+                <a href="about.html">About Us</a> |
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="social-icons">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+            </div>
+            <p>&copy; 2025 Impartial Estates Developments (Pty) Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
