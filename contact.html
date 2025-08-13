@@ -23,6 +23,7 @@
                     <li><a href="our-approach.html">Our Approach</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="projects.html">Projects</a></li>
+                    <li><a href="insights.html">Insights</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="contact.html" class="btn">Contact</a></li>
                 </ul>
@@ -41,41 +42,46 @@
         <section id="contact-details">
             <div class="container">
                 <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; align-items: flex-start;">
-                    
+
                     <div style="flex: 2; min-width: 300px; max-width: 600px;">
                         <h2 style="text-align: left;">Send Us a Message</h2>
                         <p style="text-align: left;">Whether you have a piece of land, are looking to invest, or simply want to learn more about our approach, we'd love to hear from you.</p>
                         <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="contact-form" style="text-align: left;">
                             <p class="hidden">
-                                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                                <label>Don’t fill this out if you're a human: <input name="bot-field" /></label>
                             </p>
-                            <input type="hidden" name="form-name" value="contact">
-
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                            
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-
-                            <label for="phone">Phone</label>
-                             <input type="tel" id="phone" name="phone">
-
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                            
-                            <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                            <p>
+                                <label for="name">Your Name:</label>
+                                <input type="text" name="name" id="name" required />
+                            </p>
+                            <p>
+                                <label for="email">Your Email:</label>
+                                <input type="email" name="email" id="email" required />
+                            </p>
+                            <p>
+                                <label for="message">Your Message:</label>
+                                <textarea name="message" id="message" required></textarea>
+                            </p>
+                            <p>
+                                <button type="submit" class="btn">Send Message</button>
+                            </p>
                         </form>
                     </div>
 
-                    <div style="flex: 1; min-width: 250px; text-align: left;">
-                        <h2 style="text-align: left;">Contact Information</h2>
-                        <p><strong>Email:</strong><br> <a href="mailto:info@impartialestates.co.za">info@impartialestates.co.za</a></p>
-                        <p><strong>Phone:</strong><br> <a href="tel:+27691385672">+27 69 138 5672</a></p>
-                        <p><strong>Operating Area:</strong><br> Headquartered in Randfontein, Gauteng<br>Serving partners across all nine provinces of South Africa.</p>
-                        
-                        <div class="social-icons" style="margin-top: 20px; text-align: left;">
-                            <a href="#" style="color: var(--logo-brown); margin-left: 0;"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" style="color: var(--logo-brown);"><i class="fab fa-facebook-square"></i></a>
+                    <div style="flex: 1; min-width: 250px;">
+                        <h2 style="text-align: left;">Our Details</h2>
+                        <div class="contact-info">
+                            <p><strong><i class="fas fa-map-marker-alt"></i> Location:</strong></p>
+                            <p>Johannesburg, Gauteng, South Africa</p>
+                            <br>
+                            <p><strong><i class="fas fa-envelope"></i> Email:</strong></p>
+                            <p><a href="mailto:info@impartialestates.co.za">info@impartialestates.co.za</a></p>
+                            <br>
+                            <p><strong><i class="fas fa-phone"></i> Phone:</strong></p>
+                            <p>+27 69 138 5672</p>
+                            <br>
+                            <p><strong><i class="fas fa-clock"></i> Business Hours:</strong></p>
+                            <p>Mon - Fri: 8:00 AM - 5:00 PM</p>
                         </div>
                     </div>
                 </div>
@@ -84,23 +90,35 @@
     </main>
 
     <footer>
-        <div class="container footer-content">
-             <div class="logo">
-                <a href="index.html"><img src="Impartial Estates Logo2.png" alt="Impartial Estates Developments Logo" style="max-height: 50px;"></a>
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <div class="logo"><img src="Impartial Estates Logo2.png" alt="Impartial Estates Logo" style="height: 60px;"></div>
+                <p>We are a new generation of property development managers, specializing in end-to-end residential project management across South Africa.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
             </div>
             <div class="footer-links">
-                <a href="index.html">Home</a> |
-                <a href="our-approach.html">Our Approach</a> |
-                <a href="services.html">Services</a> |
-                <a href="projects.html">Projects</a> |
-                <a href="about.html">About Us</a> |
-                <a href="contact.html">Contact</a>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="our-approach.html">Our Approach</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="insights.html">Insights</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
-            <div class="social-icons">
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Johannesburg, Gauteng, South Africa</p>
+                <p>Email: info@impartialestates.co.za</p>
+                <p>Phone: +27 69 138 5672</p>
             </div>
-            <p>&copy; 2025 Impartial Estates Developments (Pty) Ltd. All Rights Reserved.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Impartial Estates Developments. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
